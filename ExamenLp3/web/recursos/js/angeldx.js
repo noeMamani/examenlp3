@@ -1,0 +1,10 @@
+document.writeln('<link rel="stylesheet" href="recursos/css/style.css" type="text/css" media="screen"/>');
+document.writeln('<script type="text/javascript" src="recursos/js/jquery-1.8.3.min.js"></script>');
+document.writeln('<script type="text/javascript" src="recursos/js/kwicks.js"></script>');
+document.writeln('<script type="text/javascript" src="recursos/js/custom.js"></script>');
+document.writeln('<script type="text/javascript" src="recursos/js/jquery.form.js"></script>');
+document.writeln('<script type="text/javascript" src="recursos/js/jquery.validate.min.js"></script>');
+document.writeln('<script type="text/javascript" src="recursos/js/fancybox/jquery.fancybox-1.3.4.js"></script>');
+document.writeln('<script type="text/javascript" src="recursos/js/jquery.corner.js"></script>');
+document.writeln('<link href="recursos/js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css"/>');
+document.writeln('<link href="recursos/css/estilo.css" rel="stylesheet" type="text/css"/>');

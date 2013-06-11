@@ -1,0 +1,23 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+         
+        <action name="verificar" class="examen.actions.VerificarLogin">
+            <result name="success" >/jsp/menus.jsp</result>
+            <result name="error">/index.jsp    
+            </result>
+        </action>
+       <action name="listarOperacion" class="examen.actions.OperacionAction" method="list">
+            <result name="success">/jsp/crud/operacionList.jsp</result>
+        </action>  
+       <action name="eliminarOperacion" class="examen.actions.OperacionAction" method="del">
+            <result name="success" type="redirect">/jsp/crud/operacionList.jsp</result>
+        </action> 
+        
+    
+    </package>
+</struts>
