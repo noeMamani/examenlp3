@@ -23,6 +23,8 @@
         <action name="editarOperacion" class="examen.actions.OperacionAction" method="edit">
             <result name="success">/jsp/crud/OperacionAdd.jsp</result>
         </action>
-    
+    <action name="nuevoOperacion" class="examen.actions.OperacionAction" method="blank">
+            <result name="success">/jsp/crud/OperacionAdd.jsp</result>
+        </action>  
     </package>
 </struts>

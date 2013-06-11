@@ -32,15 +32,19 @@
     <body>
         <h1><s:text name="nuevo.titulo"/></h1>
         <div align="center">
-        <s:form action="agregarEstudiante" id="frm">
-            <s:push value="estudiante">
-            <s:hidden name="id"/>    
-            <s:textfield name="nombres" key="nuevo.nombres" cssClass="required" required="true" title="Ingrese nombre"/>
-            <s:textfield name="apellidos" key="nuevo.apellidos"/>
-            <s:textfield name="dni" key="nuevo.dni" size="9" maxlength="8"/>
-            <s:radio name="tcolegio" list="{'PARTICULAR','ESTATAL'}" key="nuevo.tcolegio"/>
-            <s:textfield name="ncolegio" key="nuevo.ncolegio"/>
-            <s:select name="categoria" list="{'A','B','C','D'}" key="nuevo.categoria"/>
+        <s:form action="agregarOperacion" id="frm">
+           <s:push value="operacion">
+           <s:hidden name="id"/>    
+           <s:textfield label="id_persona" name="id_persona" />
+           <s:textfield label="id_sucursal" name="id_sucursal" />
+           <s:textfield label="id_consepto" name="id_consepto" />
+           <s:textfield label="comprobante" name="comprobante" />
+           <s:textfield label="numero" name="numero" />
+           <s:textfield label="catidad" name="catidad" />
+           <s:textfield label="descripcion" name="descripcion" />
+           <s:textfield label="ingreso" name="ingreso" />
+           <s:textfield label="egreso" name="egreso" />
+           
             <s:reset key="nuevo.btn.limpiar" cssClass="button mediun blue"/>
             <s:submit key="nuevo.btn.registrar" cssClass="button mediun blue"/>
             </s:push>

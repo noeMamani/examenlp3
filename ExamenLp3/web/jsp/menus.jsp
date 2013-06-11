@@ -24,7 +24,7 @@
     <div id="cuerpo"><!-- Aca se muestra las páginas--></div>
     <div id="pie" class="pie"> 
         <article>
-           Este texto fue hecho por Bonnier Nilss
+    
         </article>
     </div>
 </div>
