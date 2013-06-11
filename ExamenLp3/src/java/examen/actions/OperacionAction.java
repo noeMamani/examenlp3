@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.struts2.ServletActionContext;
-
+ 
 /**
  *
  * @author Alumno
@@ -27,6 +27,7 @@ public class OperacionAction extends ActionSupport implements ModelDriven<Operac
     @Override
     public String execute() throws Exception {
         throw new UnsupportedOperationException("Not supported yet.");
+  //aca una modificacio
     }
 
     @Override
