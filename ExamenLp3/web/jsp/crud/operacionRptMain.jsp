@@ -17,10 +17,9 @@ $(document).ready(function(){
 </script>        
     </head>
 <body>
+    <a href="imprimir">reportar </a>
     <div align="center">
         <s:form id="form" name="form" method="post" action="imprimir" theme="simple" target="print">
-        mes<s:select name="mes" list="{'TODOS','01','02','03','04','05','06','07','08','09','10','11','12'}"/>          
-        año <s:select name="año" list="{'2013','2012','2011','2011'}"/>      
         <s:submit value="Buscar" cssClass="button mediun orange"/>
     </s:form>
     </div>

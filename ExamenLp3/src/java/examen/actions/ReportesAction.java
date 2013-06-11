@@ -24,12 +24,7 @@ public class ReportesAction extends ActionSupport {
     @Override
     public String execute() throws Exception {
         cnn=con.conectar();
-      if(mes.equals("TODOS")){
-           params.put("mes","");
-        }else{
-           params.put("mes",mes); 
-        }   
-        params.put("categoria",año);               
+                     
         return SUCCESS;
     }
 

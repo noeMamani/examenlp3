@@ -17,9 +17,11 @@
          <li id="kwick1"><a href="listarOperacion" class="menuitem">Operaciones </a></li>  
          
          <li id="kwick4"><a href="jsp/estudianteRptMain.jsp" class="menuitem">Impresión</a></li>  
-     </ul>        
-        <a href="${pageContext.request.contextPath}/locale?request_locale=es" class="menuitem" style="color: white; border-bottom: 1px dotted white;">|<img src="recursos/icon/pe.png"/>Español|</a>
+     </ul> 
+        
+<!--        <a href="${pageContext.request.contextPath}/locale?request_locale=es" class="menuitem" style="color: white; border-bottom: 1px dotted white;">|<img src="recursos/icon/pe.png"/>Español|</a>
         <a href="${pageContext.request.contextPath}/locale?request_locale=en" class="menuitem" style="color: white; border-bottom: 1px dotted white;">|<img src="recursos/icon/us.png"/>Ingles|</a>        
+    -->
     </div>
     <div id="cuerpo"><!-- Aca se muestra las páginas--></div>
     <div id="pie" class="pie"> 

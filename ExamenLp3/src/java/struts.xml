@@ -21,11 +21,11 @@
         <!-- Reportes con JasperReport -->
         <action name="imprimir" class="examen.actions.ReportesAction">
         <result name="success" type="jasper">
-            <param name="location">reportes/reportOperacion.jasper</param>
+            <param name="location">reportes/report1.jasper</param>
             <param name="connection">cnn</param>
             <param name="format">PDF</param>
        
-            <param name="reportParameters">params</param>
+<!--            <param name="reportParameters">params</param>-->
 
         </result>
         </action>
