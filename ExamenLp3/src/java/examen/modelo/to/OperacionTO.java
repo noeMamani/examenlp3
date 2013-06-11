@@ -12,7 +12,9 @@ import java.util.Date;
  * @author Alumno
  */
 public class OperacionTO {
- private int id_operacion;
+
+ 
+ private int id;
   int id_persona;
   int id_sucursal;
   int id_concepto;
@@ -24,7 +26,13 @@ public class OperacionTO {
   Double egreso;
   String fecha;
   String  desc_con;//campo de mas para abrir el campo dec_con
+   public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getDesc_con() {
         return desc_con;
     }
@@ -42,13 +50,7 @@ public class OperacionTO {
         this.id_sucursal = id_sucursal;
     }
 
-    public int getId_operacion() {
-        return id_operacion;
-    }
-
-    public void setId_operacion(int id_operacion) {
-        this.id_operacion = id_operacion;
-    }
+   
 
     public int getId_persona() {
         return id_persona;

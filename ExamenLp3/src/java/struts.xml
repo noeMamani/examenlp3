@@ -17,7 +17,12 @@
        <action name="eliminarOperacion" class="examen.actions.OperacionAction" method="del">
             <result name="success" type="redirect">/jsp/crud/operacionList.jsp</result>
         </action> 
-        
+        <action name="agregarOperacion" class="examen.actions.OperacionAction" method="add">
+            <result name="success" type="redirect">/listarOperacion</result>
+        </action>
+        <action name="editarOperacion" class="examen.actions.OperacionAction" method="edit">
+            <result name="success">/jsp/crud/OperacionAdd.jsp</result>
+        </action>
     
     </package>
 </struts>

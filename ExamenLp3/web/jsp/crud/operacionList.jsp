@@ -67,12 +67,12 @@
                               <td><s:url id="editURL" action="editarOperacion">
                                        <%// <s:param name="id" value="%{id}"></s:param> %>
                                     </s:url>
-                                    <s:a href="%{editURL}" id="ed" onclick="return fn_editar(%{id_operacion})"><img src="recursos/icon/pencil.png"/></s:a>
+                                    <s:a href="%{editURL}" id="ed" onclick="return fn_editar(%{id})"><img src="recursos/icon/pencil.png"/></s:a>
                                 </td>
 				<td><s:url id="deleteURL" action="eliminarOperacion">
                                         <%//<s:param name="id" value="%{id}"></s:param> %>
                                     </s:url>
-                                    <s:a href="%{deleteURL}" id="el" onclick="return fn_eliminar(%{id_operacion})"><img src="recursos/icon/delete.png"/></s:a>
+                                    <s:a href="%{deleteURL}" id="el" onclick="return fn_eliminar(%{id})"><img src="recursos/icon/delete.png"/></s:a>
                                 </td>                                    
 				
 			</tr>

@@ -28,6 +28,7 @@ public class OperacionAction extends ActionSupport implements ModelDriven<Operac
     public String execute() throws Exception {
         throw new UnsupportedOperationException("Not supported yet.");
   //aca una modificacio
+        
     }
 
     @Override
@@ -50,8 +51,23 @@ public class OperacionAction extends ActionSupport implements ModelDriven<Operac
         dao.eliminar(request.getParameter("id"));
         return SUCCESS;
     }
+    ///jajajaj conforme man yayayay
+    public String add() throws Exception {
+        System.out.println(operacion.getId());
+        if(operacion.getId()==(0)){
+            dao.agregar(operacion);
+        }else{
+            dao.modificar(operacion);
+        }        
+        return SUCCESS;
+    }
 
-
+       public String edit()throws Exception {
+        HttpServletRequest request = (HttpServletRequest) ActionContext.getContext().get(ServletActionContext.HTTP_REQUEST);
+        System.out.println(request.getParameter("id"));
+        operacion=dao.buscarPorId(request.getParameter("id"));                               
+        return SUCCESS;
+    } 
     public OperacionTO getOperacion() {
         return operacion;
     }
