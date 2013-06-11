@@ -86,14 +86,16 @@ public class OperacionDao {
            }finally{cnn.desconectar();}
             }
       public void agregar(OperacionTO data) throws Exception {
-     String sql="INSERT INTO operacion (id_persona,id_sucursal,id_consepto,comprabante,numero,cantidad,descripcion,ingreso,egreso,fecha) VALUES (?,?,?,?,?,?,?,?,?,now())";      
-      int i=0;
+     String sql="INSERT INTO operacion (id_persona,id_sucursal,id_concepto,comprobante,numero,cantidad,descripcion,ingreso,egreso,fecha) VALUES (?,?,?,?,?,?,?,?,?,now())";      
+      
+     System.out.println("AQUI LLEGA O NAAAA " +data.getDescripcion() +" "+ data.getId());
+     int i=0;
       Connection c=null;
       try{
         c=cnn.conectar();
         c.setAutoCommit(false);
         PreparedStatement ps = c.prepareStatement(sql);                    
-        ps.setInt(++i, data.getId());
+        ps.setInt(++i, data.getId_persona());
         ps.setInt(++i, data.getId_sucursal());
         ps.setInt(++i, data.getId_concepto());
         ps.setString(++i, data.getComprobante());
@@ -104,9 +106,10 @@ public class OperacionDao {
         ps.setDouble(++i, data.getEgreso());
         ps.executeUpdate();
         c.commit();
-        ps.close();        
+        ps.close();
+       
      }catch(Exception e) {
-        System.out.println(e.getMessage());
+        System.out.println( "este es mi problema"+e.getMessage());
         c.rollback();
      } finally{cnn.desconectar();}
   }
@@ -152,7 +155,7 @@ public class OperacionDao {
                                         
             while (rs.next()) {
                 d = new OperacionTO();
-                d.setId(rs.getInt("id"));
+                //d.setId(rs.getInt("id"));
                 d.setId_persona(rs.getInt("id_persona"));
                 d.setId_sucursal(rs.getInt("id_sucursal"));
                 d.setId_concepto(rs.getInt("id_concepto"));

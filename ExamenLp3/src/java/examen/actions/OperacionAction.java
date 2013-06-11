@@ -56,6 +56,7 @@ public class OperacionAction extends ActionSupport implements ModelDriven<Operac
         System.out.println(operacion.getId());
         if(operacion.getId()==(0)){
             dao.agregar(operacion);
+            System.out.println("siiiiiiiiiiii lleeeegaaaaaaa");
         }else{
             dao.modificar(operacion);
         }        

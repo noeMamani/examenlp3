@@ -34,20 +34,19 @@
         <div align="center">
         <s:form action="agregarOperacion" id="frm">
            <s:push value="operacion">
-           <s:hidden name="id"/>    
+           <s:hidden label="id" name="id" />    
            <s:textfield label="id_persona" name="id_persona" />
            <s:textfield label="id_sucursal" name="id_sucursal" />
-           <s:textfield label="id_consepto" name="id_consepto" />
+           <s:textfield label="id_consepto" name="id_concepto" />
            <s:textfield label="comprobante" name="comprobante" />
            <s:textfield label="numero" name="numero" />
-           <s:textfield label="catidad" name="catidad" />
+           <s:textfield label="catidad" name="cantidad" />
            <s:textfield label="descripcion" name="descripcion" />
            <s:textfield label="ingreso" name="ingreso" />
            <s:textfield label="egreso" name="egreso" />
-           
-            <s:reset key="nuevo.btn.limpiar" cssClass="button mediun blue"/>
-            <s:submit key="nuevo.btn.registrar" cssClass="button mediun blue"/>
-            </s:push>
+           <s:reset  cssClass="button mediun blue" />
+           <s:submit  cssClass="button mediun blue" />
+           </s:push>
         </s:form>
         </div>    
     </body>
